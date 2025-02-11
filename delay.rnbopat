@@ -4,14 +4,13 @@
 		"appversion" : 		{
 			"major" : 9,
 			"minor" : 0,
-			"revision" : 4,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "rnbo",
-		"rect" : [ 278.0, 101.0, 370.0, 480.0 ],
-		"default_fontname" : "Lato",
+		"rect" : [ 548.0, 192.0, 370.0, 480.0 ],
 		"gridonopen" : 2,
 		"gridsize" : [ 15.0, 15.0 ],
 		"gridsnaponopen" : 2,
@@ -523,11 +522,11 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 165.0, 300.0, 29.5, 23.0 ],
+					"patching_rect" : [ 165.0, 300.0, 33.0, 23.0 ],
 					"rnbo_classname" : "*~",
-					"rnbo_serial" : 1,
+					"rnbo_serial" : 3,
 					"rnbo_uniqueid" : "*~_obj-21",
-					"text" : "*~"
+					"text" : "*~ 1."
 				}
 
 			}
@@ -660,10 +659,10 @@
 					"patching_rect" : [ 75.0, 360.0, 43.0, 23.0 ],
 					"rnbo_classname" : "delay~",
 					"rnbo_extra_attributes" : 					{
-						"interp" : "linear",
-						"ramp" : 50.0,
 						"maxsize" : "samplerate",
-						"maxdelayms" : 0.0
+						"maxdelayms" : 0.0,
+						"interp" : "linear",
+						"ramp" : 50.0
 					}
 ,
 					"rnbo_serial" : 1,
@@ -681,8 +680,8 @@
 					"patching_rect" : [ 30.0, 435.0, 43.0, 23.0 ],
 					"rnbo_classname" : "out~",
 					"rnbo_extra_attributes" : 					{
-						"comment" : "",
-						"meta" : ""
+						"meta" : "",
+						"comment" : ""
 					}
 ,
 					"rnbo_serial" : 1,
@@ -778,8 +777,8 @@
 					"patching_rect" : [ 30.0, 30.0, 35.0, 23.0 ],
 					"rnbo_classname" : "in~",
 					"rnbo_extra_attributes" : 					{
-						"comment" : "",
-						"meta" : ""
+						"meta" : "",
+						"comment" : ""
 					}
 ,
 					"rnbo_serial" : 1,
@@ -970,7 +969,7 @@
 
 			}
  ],
-		"originid" : "pat-42"
+		"originid" : "pat-32"
 	}
 
 }
