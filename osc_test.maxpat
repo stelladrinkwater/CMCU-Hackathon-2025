@@ -42,7 +42,7 @@
 						}
 ,
 						"classnamespace" : "rnbo",
-						"rect" : [ 59.0, 106.0, 730.0, 627.0 ],
+						"rect" : [ 96.0, 133.0, 730.0, 627.0 ],
 						"gridonopen" : 2,
 						"gridsize" : [ 15.0, 15.0 ],
 						"gridsnaponopen" : 2,
