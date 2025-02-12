@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 229.0, 87.0, 1000.0, 688.0 ],
+		"rect" : [ 229.0, 87.0, 268.0, 207.0 ],
 		"gridonopen" : 2,
 		"gridsize" : [ 15.0, 15.0 ],
 		"gridsnaponopen" : 2,
@@ -20,7 +20,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 30.0, 300.0, 35.0, 22.0 ],
+					"patching_rect" : [ 30.0, 150.0, 35.0, 22.0 ],
 					"text" : "dac~"
 				}
 
@@ -90,7 +90,7 @@
 					}
 ,
 					"outlettype" : [ "signal", "list" ],
-					"patching_rect" : [ 30.0, 225.0, 188.0, 22.0 ],
+					"patching_rect" : [ 30.0, 105.0, 188.0, 22.0 ],
 					"rnboattrcache" : 					{
 
 					}
@@ -125,7 +125,7 @@
 						"embed" : 1,
 						"snapshot" : 						{
 							"__sps" : 							{
-								"p_obj-2" : 								{
+								"p_obj-11" : 								{
 									"__sps" : 									{
 										"object" : 										{
 
@@ -135,19 +135,7 @@
 
 								}
 ,
-								"etc..." : 								{
-
-								}
-,
-								"etc...[2]" : 								{
-
-								}
-,
-								"card4[3]" : 								{
-
-								}
-,
-								"card3[2]" : 								{
+								"card4[1]" : 								{
 
 								}
 ,
@@ -163,23 +151,11 @@
 
 								}
 ,
-								"card4[1]" : 								{
-
-								}
-,
-								"card1" : 								{
-
-								}
-,
 								"card2[1]" : 								{
 
 								}
 ,
-								"matrix_router[1]" : 								{
-
-								}
-,
-								"matrix_router[2]" : 								{
+								"card1" : 								{
 
 								}
 ,
@@ -191,7 +167,19 @@
 
 								}
 ,
-								"the_fool[2]" : 								{
+								"p_obj-8" : 								{
+
+								}
+,
+								"etc..." : 								{
+
+								}
+,
+								"etc...[2]" : 								{
+
+								}
+,
+								"p_obj-70" : 								{
 
 								}
 ,
@@ -205,15 +193,11 @@
 
 								}
 ,
-								"matrix_router" : 								{
+								"p_obj-3" : 								{
 
 								}
 ,
 								"card4" : 								{
-
-								}
-,
-								"card2[2]" : 								{
 
 								}
 ,
@@ -249,7 +233,7 @@
 									"embed" : 1,
 									"snapshot" : 									{
 										"__sps" : 										{
-											"p_obj-2" : 											{
+											"p_obj-11" : 											{
 												"__sps" : 												{
 													"object" : 													{
 
@@ -259,19 +243,7 @@
 
 											}
 ,
-											"etc..." : 											{
-
-											}
-,
-											"etc...[2]" : 											{
-
-											}
-,
-											"card4[3]" : 											{
-
-											}
-,
-											"card3[2]" : 											{
+											"card4[1]" : 											{
 
 											}
 ,
@@ -287,23 +259,11 @@
 
 											}
 ,
-											"card4[1]" : 											{
-
-											}
-,
-											"card1" : 											{
-
-											}
-,
 											"card2[1]" : 											{
 
 											}
 ,
-											"matrix_router[1]" : 											{
-
-											}
-,
-											"matrix_router[2]" : 											{
+											"card1" : 											{
 
 											}
 ,
@@ -315,7 +275,19 @@
 
 											}
 ,
-											"the_fool[2]" : 											{
+											"p_obj-8" : 											{
+
+											}
+,
+											"etc..." : 											{
+
+											}
+,
+											"etc...[2]" : 											{
+
+											}
+,
+											"p_obj-70" : 											{
 
 											}
 ,
@@ -329,15 +301,11 @@
 
 											}
 ,
-											"matrix_router" : 											{
+											"p_obj-3" : 											{
 
 											}
 ,
 											"card4" : 											{
-
-											}
-,
-											"card2[2]" : 											{
 
 											}
 ,
@@ -418,7 +386,7 @@
 
 			}
  ],
-		"originid" : "pat-6",
+		"originid" : "pat-150",
 		"parameters" : 		{
 			"obj-1" : [ "rnbo~[1]", "rnbo~", 0 ],
 			"parameterbanks" : 			{
