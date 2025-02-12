@@ -125,6 +125,14 @@
 						"embed" : 1,
 						"snapshot" : 						{
 							"__sps" : 							{
+								"etc..." : 								{
+
+								}
+,
+								"card4[1]" : 								{
+
+								}
+,
 								"p_obj-11" : 								{
 									"__sps" : 									{
 										"object" : 										{
@@ -135,7 +143,7 @@
 
 								}
 ,
-								"card4[1]" : 								{
+								"card3" : 								{
 
 								}
 ,
@@ -151,7 +159,7 @@
 
 								}
 ,
-								"card2[1]" : 								{
+								"card2" : 								{
 
 								}
 ,
@@ -159,11 +167,29 @@
 
 								}
 ,
-								"card2" : 								{
+								"card2[1]" : 								{
 
 								}
 ,
-								"card3" : 								{
+								"card4" : 								{
+
+								}
+,
+								"card1[1]" : 								{
+									"__sps" : 									{
+										"p_obj-1" : 										{
+
+										}
+
+									}
+
+								}
+,
+								"card2[2]" : 								{
+
+								}
+,
+								"card1[2]" : 								{
 
 								}
 ,
@@ -171,19 +197,7 @@
 
 								}
 ,
-								"etc..." : 								{
-
-								}
-,
-								"etc...[2]" : 								{
-
-								}
-,
-								"p_obj-70" : 								{
-
-								}
-,
-								"the_fool[1]" : 								{
+								"the_fool" : 								{
 									"__sps" : 									{
 										"p_obj-1" : 										{
 
@@ -197,15 +211,23 @@
 
 								}
 ,
-								"card4" : 								{
+								"card1[3]" : 								{
 
 								}
 ,
-								"card1[1]" : 								{
+								"card3[2]" : 								{
 
 								}
 ,
-								"the_fool" : 								{
+								"p_obj-70" : 								{
+
+								}
+,
+								"p_obj-4" : 								{
+
+								}
+,
+								"the_fool[1]" : 								{
 									"__sps" : 									{
 										"p_obj-1" : 										{
 
@@ -233,6 +255,14 @@
 									"embed" : 1,
 									"snapshot" : 									{
 										"__sps" : 										{
+											"etc..." : 											{
+
+											}
+,
+											"card4[1]" : 											{
+
+											}
+,
 											"p_obj-11" : 											{
 												"__sps" : 												{
 													"object" : 													{
@@ -243,7 +273,7 @@
 
 											}
 ,
-											"card4[1]" : 											{
+											"card3" : 											{
 
 											}
 ,
@@ -259,7 +289,7 @@
 
 											}
 ,
-											"card2[1]" : 											{
+											"card2" : 											{
 
 											}
 ,
@@ -267,11 +297,29 @@
 
 											}
 ,
-											"card2" : 											{
+											"card2[1]" : 											{
 
 											}
 ,
-											"card3" : 											{
+											"card4" : 											{
+
+											}
+,
+											"card1[1]" : 											{
+												"__sps" : 												{
+													"p_obj-1" : 													{
+
+													}
+
+												}
+
+											}
+,
+											"card2[2]" : 											{
+
+											}
+,
+											"card1[2]" : 											{
 
 											}
 ,
@@ -279,19 +327,7 @@
 
 											}
 ,
-											"etc..." : 											{
-
-											}
-,
-											"etc...[2]" : 											{
-
-											}
-,
-											"p_obj-70" : 											{
-
-											}
-,
-											"the_fool[1]" : 											{
+											"the_fool" : 											{
 												"__sps" : 												{
 													"p_obj-1" : 													{
 
@@ -305,15 +341,23 @@
 
 											}
 ,
-											"card4" : 											{
+											"card1[3]" : 											{
 
 											}
 ,
-											"card1[1]" : 											{
+											"card3[2]" : 											{
 
 											}
 ,
-											"the_fool" : 											{
+											"p_obj-70" : 											{
+
+											}
+,
+											"p_obj-4" : 											{
+
+											}
+,
+											"the_fool[1]" : 											{
 												"__sps" : 												{
 													"p_obj-1" : 													{
 
@@ -386,7 +430,7 @@
 
 			}
  ],
-		"originid" : "pat-150",
+		"originid" : "pat-276",
 		"parameters" : 		{
 			"obj-1" : [ "rnbo~[1]", "rnbo~", 0 ],
 			"parameterbanks" : 			{
@@ -413,6 +457,13 @@
 				"bootpath" : "~/Documents/GitHub/CMCU-Hackathon-2025",
 				"patcherrelativepath" : ".",
 				"type" : "RBOP",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "toot.wav",
+				"bootpath" : "~/Documents/GitHub/CMCU-Hackathon-2025/Samples",
+				"patcherrelativepath" : "./Samples",
+				"type" : "WAVE",
 				"implicit" : 1
 			}
  ],
