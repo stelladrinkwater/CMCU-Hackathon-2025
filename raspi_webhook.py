@@ -1,6 +1,14 @@
 from flask import Flask, request, jsonify
+from pythonosc import udp_client
 
 app = Flask(__name__)
+
+
+target_ip = "192.168.1.65" # Verify this
+# target_ip = "mwpi.local" maybe?
+target_port = 1234
+client = udp_client.SimpleUDPClient(target_ip, target_port)
+
 
 @app.route('/webhook', methods=['POST'])
 def webhook():
@@ -9,6 +17,14 @@ def webhook():
         nfc_id = data['id']
         # Process the NFC ID as needed
         print(f"NFC Id recieved: {nfc_id}")
+
+        try:
+            nfc_id = float(nfc_id)
+            client.send_message("/rnbo/inst/0/params/card", nfc_id)
+
+        except ValueError:
+            print(f"NFC Id not a float.")
+
         return jsonify({"status": "success", "nfc_id": nfc_id}), 200
     else:
         return jsonify({"status": "error", "message": "ID not found"}), 400
