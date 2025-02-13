@@ -13,21 +13,41 @@ client = udp_client.SimpleUDPClient(target_ip, target_port)
 @app.route('/webhook', methods=['POST'])
 def webhook():
     data = request.get_json()
-    if 'id' in data:
-        nfc_id = data['id']
-        # Process the NFC ID as needed
-        print(f"NFC Id recieved: {nfc_id}")
-
-        try:
-            nfc_id = float(nfc_id)
-            client.send_message("/rnbo/inst/0/params/card", nfc_id)
-
-        except ValueError:
-            print(f"NFC Id not a float.")
-
-        return jsonify({"status": "success", "nfc_id": nfc_id}), 200
+    if 'tag' in data:
+        tag = data[tag]
+        print(f"NFC tag recieved: {tag}")
     else:
-        return jsonify({"status": "error", "message": "ID not found"}), 400
+        return jsonify({"status": "error", "message": "Tag not found"}), 400
+    
+    if 'device' in data:
+        device = data[device]
+    else:
+        return jsonify({"status": "error", "message": "Device not found"}), 400
+    
+    try:
+        tag = int(tag)
+    except ValueError:
+        return jsonify({"status": "error", "message": "Tag not an int"}), 400
+
+    try:
+        device = int(device)
+    except ValueError:
+        return jsonify({"status": "error", "message": "Device not an int"}), 400
+
+    if (device < 1 or device > 3):
+        return jsonify({"status": "error", "message": "Invalid device"}), 400
+    
+    if (device == 1):
+        client.send_message("/rnbo/inst/0/params/past_card", tag)
+
+    elif (device == 2):
+        client.send_message("/rnbo/inst/0/params/present_card", tag)
+
+    elif (device == 3):
+        client.send_message("/rnbo/inst/0/params/past_card", tag)
+
+    return jsonify({"status": "success", "tag": tag}), 200
+    
 
 if __name__ == '__main__':
     # To test this endpoint, you can use the following curl command:
